@@ -26,6 +26,7 @@ services:
     ports:
       - 8000:80
     environment:
+      - UPLOAD_LIMIT=1G
       - PMA_ARBITRARY=1
       - PMA_HOST=mariadb
     depends_on:
